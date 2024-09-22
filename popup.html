@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Express</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      width: 350px; /* Definir largura mínima */
+      height: 500px; /* Definir altura */
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      flex-grow: 1;
+      margin-right: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #007aff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>To-Do Express</h1>
+  <div class="input-container">
+    <input id="task-input" type="text" placeholder="Nova tarefa">
+    <button id="add-task">Adicionar</button>
+  </div>
+  <ul id="task-list"></ul>
+    <button id="clear-tasks">Limpar tarefas concluídas</button>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
